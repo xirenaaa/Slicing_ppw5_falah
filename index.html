@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="responsivedesign-container">
+        <div class="responsivedesignresponsivedesign">
+          <div class="responsivedesign-mac-book-air3">
+            <div class="responsivedesign-frame293">
+              <div class="responsivedesign-frame290">
+                <div class="responsivedesign-frame289">
+                  <div class="responsivedesign-frame288">
+                    <img
+                      src="public/external/malvoralogo4021-5p5h.svg"
+                      alt="MALVORALOGO4021"
+                      class="responsivedesignmalvoralogo"
+                    />
+                  </div>
+                  <img
+                    src="public/external/frame2874021-rqhl.svg"
+                    alt="Frame2874021"
+                    class="responsivedesign-frame287"
+                  />
+                </div>
+                <div class="responsivedesign-frame245">
+                  <span class="responsivedesign-text100 NAV18PPW">
+                    COLLECTION
+                  </span>
+                  <span class="responsivedesign-text101 NAV18PPW">
+                    EDITORIALS
+                  </span>
+                  <span class="responsivedesign-text102 NAV18PPW">EVENTS</span>
+                  <span class="responsivedesign-text103 NAV18PPW">
+                    MEMBERSHIP
+                  </span>
+                </div>
+              </div>
+              <div class="responsivedesign-frame292">
+                <div class="responsivedesign-frame291">
+                  <span class="responsivedesign-text104">
+                    <span>Explore the World, One</span>
+                    <br />
+                    <span>Journey at a Time</span>
+                  </span>
+                  <span class="responsivedesign-text108">
+                    Our Agency Offers a Wide Range of Personalized and Flexible
+                    Travel Plans, Ensuring Every Journey Matches Your Unique
+                    Style, Preferences, and Budget
+                  </span>
+                </div>
+                <button class="responsivedesign-button1">
+                  <span class="responsivedesign-text109 LabelL12Regular">
+                    Sign Up
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="responsivedesign-mac-book-air4">
+            <div class="responsivedesign-frame295">
+              <span class="responsivedesign-text110 L20PPW">4,5</span>
+              <div class="responsivedesign-frame294">
+                <img
+                  src="public/external/starreview4021-15bv.svg"
+                  alt="starreview4021"
+                  class="responsivedesign-starreview1"
+                />
+                <img
+                  src="public/external/starreview4021-hvr9.svg"
+                  alt="starreview4021"
+                  class="responsivedesign-starreview2"
+                />
+                <img
+                  src="public/external/starreview4021-gy6o.svg"
+                  alt="starreview4021"
+                  class="responsivedesign-starreview3"
+                />
+                <img
+                  src="public/external/starreview4021-fvsn.svg"
+                  alt="starreview4021"
+                  class="responsivedesign-starreview4"
+                />
+                <img
+                  src="public/external/starreview4021-11wh.svg"
+                  alt="starreview4021"
+                  class="responsivedesign-starreview5"
+                />
+              </div>
+              <span class="responsivedesign-text111 L20PPW">Google Review</span>
+            </div>
+          </div>
+          <div class="responsivedesign-mac-book-air5">
+            <div class="responsivedesign-frame214">
+              <div class="responsivedesign-frame213">
+                <span class="responsivedesign-text112 H42PPW">
+                  <span>Travel in style, with exclusive</span>
+                  <br />
+                  <span>VIP benefits</span>
+                </span>
+                <img
+                  src="public/external/vector114021-8grc.svg"
+                  alt="Vector114021"
+                  class="responsivedesign-vector11"
+                />
+                <span class="responsivedesign-text116 L24PPW">
+                  Indulge in luxury with our curated collection of the world's
+                  best hotels and enjoy exclusive VIP benefits, all at no extra
+                  cost.
+                </span>
+              </div>
+              <video
+                src="public\external\mixkit-beautiful-orange-sunset-on-the-beach-2169-full-hd.mp4"
+                alt="Rectangle204021" controls autoplay
+                class="responsivedesign-rectangle20"
+              ></video>
+            </div>
+          </div>
+          <div class="responsivedesign-mac-book-air6">
+            <div class="responsivedesign-frame246">
+              <div class="responsivedesign-frame298">
+                <div class="responsivedesign-frame236">
+                  <span class="responsivedesign-text117 H42PPW">
+                    Member benefits
+                  </span>
+                  <img
+                    src="public/external/frame2974021-3e3.svg"
+                    alt="Frame2974021"
+                    class="responsivedesign-frame297"
+                  />
+                </div>
+              </div>
+              <div class="responsivedesign-frame244">
+                <div class="responsivedesign-frame237">
+                  <div class="responsivedesign-frame227">
+                    <div class="responsivedesign-frame221">
+                      <div class="responsivedesign-frame215">
+                        <div class="responsivedesign-frame210">
+                          <div class="responsivedesign-hotelbenefits">
+                            <div class="responsivedesign-group1">
+                              <img
+                                src="public/external/vectori4021-fm6g.svg"
+                                alt="VectorI4021"
+                                class="responsivedesign-vector10"
+                              />
+                              <img
+                                src="public/external/vectori4021-dp1p.svg"
+                                alt="VectorI4021"
+                                class="responsivedesign-vector12"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <span class="responsivedesign-text118 H20PPW">
+                          VIP HOTEL BENEFITS
+                        </span>
+                      </div>
+                      <span class="responsivedesign-text119 L16PPW">
+                        Get room upgrades. Hotel credit and other VIP benefits
+                      </span>
+                    </div>
+                    <span class="responsivedesign-text120 L16PPW">
+                      <span>Exclusive Room Upgrades</span>
+                      <br />
+                      <span>Resort &amp; Dining Credits</span>
+                      <br />
+                      <span>Priority Check-in &amp; Late Check-out</span>
+                      <br />
+                      <span>Complimentary Airport Transfers</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="responsivedesign-frame238">
+                  <div class="responsivedesign-frame228">
+                    <div class="responsivedesign-frame222">
+                      <div class="responsivedesign-frame216">
+                        <div class="responsivedesign-frame209">
+                          <div class="responsivedesign-globalcommunity">
+                            <div class="responsivedesign-group2">
+                              <img
+                                src="public/external/vectori4021-ex0m.svg"
+                                alt="VectorI4021"
+                                class="responsivedesign-vector13"
+                              />
+                              <img
+                                src="public/external/vectori4021-ohk.svg"
+                                alt="VectorI4021"
+                                class="responsivedesign-vector14"
+                              />
+                              <img
+                                src="public/external/vectori4021-rj1v.svg"
+                                alt="VectorI4021"
+                                class="responsivedesign-vector16"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <span class="responsivedesign-text128 H20PPW">
+                          GLOBAL COMMUNITY
+                        </span>
+                      </div>
+                      <span class="responsivedesign-text129 L16PPW">
+                        More than 75,000 members in over 100 countries
+                      </span>
+                    </div>
+                    <span class="responsivedesign-text130 L16PPW">
+                      <span>Connect with Like-Minded Travelers</span>
+                      <br />
+                      <span>Exclusive Travel Insights &amp; Tips</span>
+                      <br />
+                      <span>Member-Only Events &amp; Meetups</span>
+                      <br />
+                      <span>Support &amp; Assistance Worldwide</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="responsivedesign-frame239">
+                  <div class="responsivedesign-frame229">
+                    <div class="responsivedesign-frame223">
+                      <div class="responsivedesign-frame217">
+                        <div class="responsivedesign-frame208">
+                          <div class="responsivedesign-morethan800events">
+                            <div class="responsivedesign-group3">
+                              <img
+                                src="public/external/vectori4021-nb3.svg"
+                                alt="VectorI4021"
+                                class="responsivedesign-vector17"
+                              />
+                              <img
+                                src="public/external/vectori4021-bmop.svg"
+                                alt="VectorI4021"
+                                class="responsivedesign-vector18"
+                              />
+                              <img
+                                src="public/external/vectori4021-3b2.svg"
+                                alt="VectorI4021"
+                                class="responsivedesign-vector19"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <span class="responsivedesign-text138 H20PPW">
+                          MORE THAN 800 EVENTS
+                        </span>
+                      </div>
+                      <span class="responsivedesign-text139 L16PPW">
+                        Meet fellow members at our exclusive premium-only events
+                      </span>
+                    </div>
+                    <span class="responsivedesign-text140 L16PPW">
+                      <span>Exclusive Destination Gatherings</span>
+                      <br />
+                      <span>Cultural Immersion Experiences</span>
+                      <br />
+                      <span>Networking with Travel Enthusiasts</span>
+                      <br />
+                      <span>VIP Access to Special Travel Events</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="responsivedesign-frame242">
+                  <div class="responsivedesign-frame232">
+                    <div class="responsivedesign-frame226">
+                      <div class="responsivedesign-frame220">
+                        <div class="responsivedesign-frame211">
+                          <div class="responsivedesign-dailytravel">
+                            <div class="responsivedesign-group4">
+                              <img
+                                src="public/external/vectori4021-e55t.svg"
+                                alt="VectorI4021"
+                                class="responsivedesign-vector20"
+                              />
+                              <img
+                                src="public/external/vectori4021-rlmn.svg"
+                                alt="VectorI4021"
+                                class="responsivedesign-vector21"
+                              />
+                              <img
+                                src="public/external/vectori4021-4ix.svg"
+                                alt="VectorI4021"
+                                class="responsivedesign-vector22"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <span class="responsivedesign-text148 H20PPW">
+                          <span>DAILY TRAVEL INSPIRATION</span>
+                          <br />
+                        </span>
+                      </div>
+                      <span class="responsivedesign-text151 L16PPW">
+                        New editorials each day to inspire your next trip
+                      </span>
+                    </div>
+                    <span class="responsivedesign-text152 L16PPW">
+                      <span>Hidden Gems to Explore</span>
+                      <br />
+                      <span>Travel Tips &amp; Hacks</span>
+                      <br />
+                      <span>Must-Try Local Experiences</span>
+                      <br />
+                      <span>Photo &amp; Video Highlights</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="responsivedesign-frame241">
+                  <div class="responsivedesign-frame231">
+                    <div class="responsivedesign-frame225">
+                      <div class="responsivedesign-frame219">
+                        <div class="responsivedesign-frame212">
+                          <img
+                            src="public/external/travelprivileges4021-zg4.svg"
+                            alt="travelprivileges4021"
+                            class="responsivedesign-travelprivileges"
+                          />
+                        </div>
+                        <span class="responsivedesign-text160 H20PPW">
+                          TRAVEL PRIVILEGES
+                        </span>
+                      </div>
+                      <span class="responsivedesign-text161 L16PPW">
+                        Enjoy exclusive savings and tier upgrades from trusted
+                        travel brands
+                      </span>
+                    </div>
+                    <span class="responsivedesign-text162 L16PPW">
+                      <span>Exclusive Flight Discounts</span>
+                      <br />
+                      <span>Hotel &amp; Resort Upgrades</span>
+                      <br />
+                      <span>VIP Lounge Access</span>
+                      <br />
+                      <span>Priority Check-in &amp; Boarding</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="responsivedesign-frame240">
+                  <div class="responsivedesign-frame230">
+                    <div class="responsivedesign-frame224">
+                      <div class="responsivedesign-frame218">
+                        <div class="responsivedesign-frame207">
+                          <img
+                            src="public/external/hoteldeals4021-e8c.svg"
+                            alt="hoteldeals4021"
+                            class="responsivedesign-hoteldeals"
+                          />
+                        </div>
+                        <span class="responsivedesign-text170 H20PPW">
+                          HOTEL DEALS
+                        </span>
+                      </div>
+                      <span class="responsivedesign-text171 L16PPW">
+                        Get free nights at the world’s best hotels with our
+                        special offers
+                      </span>
+                    </div>
+                    <span class="responsivedesign-text172 L16PPW">
+                      <span>Exclusive Member Discounts</span>
+                      <br />
+                      <span>Complimentary Breakfast &amp;</span>
+                      <br />
+                      <span>Early Check-in &amp; Late Check-out</span>
+                      <br />
+                      <span>Loyalty Rewards &amp; Free Night Stays</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="responsivedesign-mac-book-air7">
+            <div class="responsivedesign-frame269">
+              <div class="responsivedesign-frame243">
+                <span class="responsivedesign-text180 H42PPW">
+                  Customer testimonials
+                </span>
+                <img
+                  src="public/external/vector154021-4gy.svg"
+                  alt="Vector154021"
+                  class="responsivedesign-vector15"
+                />
+              </div>
+              <div class="responsivedesign-frame299">
+                <div class="responsivedesign-frame247">
+                  <div class="responsivedesign-frame257">
+                    <div class="responsivedesign-frame256">
+                      <div class="responsivedesign-frame251">
+                        <img
+                          src="public/external/httpspxherecomenphoto8269254021-a7l4-200h.png"
+                          alt="httpspxherecomenphoto8269254021"
+                          class="responsivedesign-httpspxherecomenphoto826925"
+                        />
+                      </div>
+                      <div class="responsivedesign-frame255">
+                        <span class="responsivedesign-text181 H20PPW">
+                          Timothy Ravinder
+                        </span>
+                        <span class="responsivedesign-text182 L14PPW">
+                          Content Creator
+                        </span>
+                      </div>
+                    </div>
+                    <span class="responsivedesign-text183 L14PPW">
+                      "Amazing spots—perfect for capturing great content!"
+                    </span>
+                  </div>
+                </div>
+                <div class="responsivedesign-frame248">
+                  <div class="responsivedesign-frame260">
+                    <div class="responsivedesign-frame259">
+                      <div class="responsivedesign-frame252">
+                        <img
+                          src="public/external/httpspicjumbocomfunnyquirkysummerselfie4021-9vw9-200h.png"
+                          alt="httpspicjumbocomfunnyquirkysummerselfie4021"
+                          class="responsivedesign-httpspicjumbocomfunnyquirkysummerselfie"
+                        />
+                      </div>
+                      <div class="responsivedesign-frame258">
+                        <span class="responsivedesign-text184 H20PPW">
+                          Michael Robinson
+                        </span>
+                        <span class="responsivedesign-text185 L14PPW">
+                          Adventure Enthusiast
+                        </span>
+                      </div>
+                    </div>
+                    <span class="responsivedesign-text186 L14PPW">
+                      "Seamless travel with amazing destinations!"
+                    </span>
+                  </div>
+                </div>
+                <div class="responsivedesign-frame249">
+                  <div class="responsivedesign-frame264">
+                    <div class="responsivedesign-frame263">
+                      <div class="responsivedesign-frame253">
+                        <img
+                          src="public/external/httpspicjumbocomwomanswimminginaluxurysantorinihot4021-odph-200h.png"
+                          alt="httpspicjumbocomwomanswimminginaluxurysantorinihot4021"
+                          class="responsivedesign-httpspicjumbocomwomanswimminginaluxurysantorinihot"
+                        />
+                      </div>
+                      <div class="responsivedesign-frame262">
+                        <span class="responsivedesign-text187 H20PPW">
+                          Sophia Martinez
+                        </span>
+                        <span class="responsivedesign-text188 L14PPW">
+                          Luxury Travel Blogger
+                        </span>
+                      </div>
+                    </div>
+                    <span class="responsivedesign-text189 L14PPW">
+                      "Loved the VIP perks and exclusive stays!"
+                    </span>
+                  </div>
+                </div>
+                <div class="responsivedesign-frame250">
+                  <div class="responsivedesign-frame267">
+                    <div class="responsivedesign-frame266">
+                      <div class="responsivedesign-frame254">
+                        <img
+                          src="public/external/httpspicjumbocomyoungwomansolotravelerexploringstr4021-p8br-200h.png"
+                          alt="httpspicjumbocomyoungwomansolotravelerexploringstr4021"
+                          class="responsivedesign-httpspicjumbocomyoungwomansolotravelerexploringstr"
+                        />
+                      </div>
+                      <div class="responsivedesign-frame265">
+                        <span class="responsivedesign-text190 H20PPW">
+                          Emily Carter
+                        </span>
+                        <span class="responsivedesign-text191 L14PPW">
+                          Solo Explorer
+                        </span>
+                      </div>
+                    </div>
+                    <span class="responsivedesign-text192 L14PPW">
+                      "Great guides and support for solo trips!"
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="responsivedesign-mac-book-air8">
+            <div class="responsivedesign-frame233">
+              <span class="responsivedesign-text193 H42PPW">
+                Frequently Asked Questions
+              </span>
+              <span class="responsivedesign-text194">
+                <span class="responsivedesign-text195">
+                  Q: How do I book a trip through your platform?
+                </span>
+                <span class="responsivedesign-text196"></span>
+                <span class="responsivedesign-text197">
+                  A: You can easily book a trip by browsing our curated
+                  destinations, selecting your preferred package, and completing
+                  the reservation through our secure checkout.
+                </span>
+                <br />
+                <span class="responsivedesign-text199"></span>
+                <br />
+                <span class="responsivedesign-text201">
+                  Q: Do you offer customized travel itineraries?
+                </span>
+                <span class="responsivedesign-text202"></span>
+                <span class="responsivedesign-text203">
+                  A: Yes! Our agency provides personalized itineraries based on
+                  your preferences, budget, and travel style.
+                </span>
+                <br />
+                <span class="responsivedesign-text205"></span>
+                <br />
+                <span class="responsivedesign-text207">
+                  Q: Are there any exclusive benefits for members?
+                </span>
+                <span class="responsivedesign-text208"></span>
+                <span class="responsivedesign-text209">
+                  A: Absolutely! Members enjoy VIP hotel deals, priority
+                  bookings, discounted flights, and access to exclusive travel
+                  events.
+                </span>
+                <br />
+                <span class="responsivedesign-text211"></span>
+                <br />
+                <span class="responsivedesign-text213">
+                  Q: Is it safe to travel solo with your services?
+                </span>
+                <span class="responsivedesign-text214"></span>
+                <span class="responsivedesign-text215">
+                  A: Yes, we offer travel safety tips, verified accommodations,
+                  and a supportive community to ensure a smooth solo travel
+                  experience.
+                </span>
+                <br />
+                <span class="responsivedesign-text217">
+                  Q: What is your cancellation and refund policy?
+                </span>
+                <span class="responsivedesign-text218"></span>
+                <span>
+                  A: Our cancellation policy varies depending on the package.
+                  Please check the terms for each booking, or contact our
+                  support team for assistance.
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="responsivedesign-mac-book-air9">
+            <div class="responsivedesign-frame235">
+              <div class="responsivedesign-frame234">
+                <span class="responsivedesign-text220 H42PPW">
+                  Discover Your Next Adventure
+                </span>
+                <span class="responsivedesign-text221 L24PPW">
+                  Plan unforgettable trips with our expert travel guides,
+                  exclusive deals, and personalized itineraries. Start exploring
+                  today!
+                </span>
+              </div>
+              <div class="responsivedesign-frame300">
+                <button class="responsivedesign-button2">
+                  <span class="responsivedesign-text222 LabelL12Regular">
+                    Sign Up
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="responsivedesign-mac-book-air10">
+            <div class="responsivedesign-frame286">
+              <div class="responsivedesign-frame270">
+                <span class="responsivedesign-text223 L24PPW">
+                  About company
+                </span>
+                <span class="responsivedesign-text224 L16PPW">
+                  MALVORA provides exclusive travel deals and seamless
+                  experiences. Explore the world with us!
+                </span>
+              </div>
+              <div class="responsivedesign-frame282">
+                <div class="responsivedesign-frame281">
+                  <span class="responsivedesign-text225 L24PPW">
+                    Contact Information
+                  </span>
+                </div>
+                <div class="responsivedesign-frame280">
+                  <div class="responsivedesign-frame277">
+                    <div class="responsivedesign-frame272">
+                      <div class="responsivedesignemail">
+                        <div class="responsivedesign-group5">
+                          <img
+                            src="public/external/vectori4021-gl6x.svg"
+                            alt="VectorI4021"
+                            class="responsivedesign-vector23"
+                          />
+                          <img
+                            src="public/external/vectori4021-0g4r.svg"
+                            alt="VectorI4021"
+                            class="responsivedesign-vector24"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="responsivedesign-frame271">
+                      <span class="responsivedesign-text226 L16PPW">
+                        falahauladi972@malvora.com
+                      </span>
+                    </div>
+                  </div>
+                  <div class="responsivedesign-frame278">
+                    <div class="responsivedesign-frame273">
+                      <img
+                        src="public/external/phoneicon4021-o8xi.svg"
+                        alt="PHONEICON4021"
+                        class="responsivedesignphoneicon"
+                      />
+                    </div>
+                    <div class="responsivedesign-frame274">
+                      <span class="responsivedesign-text227 L16PPW">
+                        +(62) 8431 3849 23
+                      </span>
+                    </div>
+                  </div>
+                  <div class="responsivedesign-frame279">
+                    <div class="responsivedesign-frame276">
+                      <img
+                        src="public/external/mapicon4021-60w.svg"
+                        alt="MAPICON4021"
+                        class="responsivedesignmapicon"
+                      />
+                    </div>
+                    <div class="responsivedesign-frame275">
+                      <span class="responsivedesign-text228 L16PPW">
+                        <span>Jl. Godean Km. 5,</span>
+                        <br />
+                        <span>Ambarketawang, Gamping, Sleman</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="responsivedesign-frame285">
+                <div class="responsivedesign-frame283">
+                  <span class="responsivedesign-text232 L24PPW">
+                    Legal Pages
+                  </span>
+                </div>
+                <div class="responsivedesign-frame284">
+                  <span class="responsivedesign-text233 L16PPW">
+                    <span>Terms of use,</span>
+                    <br />
+                    <span>Disclaimer,</span>
+                    <br />
+                    <span>Privacy policy,</span>
+                    <br />
+                    <span>Cookie Policy.</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
